@@ -32,6 +32,11 @@ class Usuario extends Authenticatable
         'password', 'remember_token',
     ];
 
+	/**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
     public function getKeyName(){
         return "id_user";
     }
