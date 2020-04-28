@@ -36,6 +36,9 @@ class Usuario extends Authenticatable
         return "id_user";
     }
 
+    /**
+     *
+     */
     public function sendPasswordResetNotification($token)
     {
         $this->notify(new MyResetPassword($token));
